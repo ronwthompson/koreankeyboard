@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korean Keyboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Korean/English Keyboard</h1>
+<textarea rows='6' cols='50' id='displayedText' readonly="readonly"></textarea>
+<div id='keyboard'>
+<div id='firstRow'>
+<div class='key' id='Backquote'><span class='norm'>`</span><span class='ncapital hidden'>~</span></div>
+<div class='key' id='Digit1'><span class='norm'>1</span><span class='ncapital hidden'>!</span></div>
+<div class='key' id='Digit2'><span class='norm'>2</span><span class='ncapital hidden'>@</span></div>
+<div class='key' id='Digit3'><span class='norm'>3</span><span class='ncapital hidden'>#</span></div>
+<div class='key' id='Digit4'><span class='norm'>4</span><span class='ncapital hidden'>$</span></div>
+<div class='key' id='Digit5'><span class='norm'>5</span><span class='ncapital hidden'>%</span></div>
+<div class='key' id='Digit6'><span class='norm'>6</span><span class='ncapital hidden'>^</span></div>
+<div class='key' id='Digit7'><span class='norm'>7</span><span class='ncapital hidden'>&amp;</span></div>
+<div class='key' id='Digit8'><span class='norm'>8</span><span class='ncapital hidden'>*</span></div>
+<div class='key' id='Digit9'><span class='norm'>9</span><span class='ncapital hidden'>(</span></div>
+<div class='key' id='Digit0'><span class='norm'>0</span><span class='ncapital hidden'>)</span></div>
+<div class='key' id='Minus'><span class='norm'>-</span><span class='ncapital hidden'>_</span></div>
+<div class='key' id='Equal'><span class='norm'>=</span><span class='ncapital hidden'>+</span></div>
+<div class='key' id='Backspace'>BS</div>
+</div>
+<div id='secondRow'>
+<div class='key' id='Tab'>Tab</div>
+<div class='key' id='KeyQ'><span class='eng hidden'>q</span><span class='ecapital hidden'>Q</span><span class='kor noncapital'>ㅂ</span><span class='kcapital hidden'>ㅃ</span></div>
+<div class='key' id='KeyW'><span class='eng hidden'>w</span><span class='ecapital hidden'>W</span><span class='kor noncapital'>ㅈ</span><span class='kcapital hidden'>ㅉ</span></div>
+<div class='key' id='KeyE'><span class='eng hidden'>e</span><span class='ecapital hidden'>E</span><span class='kor noncapital'>ㄷ</span><span class='kcapital hidden'>ㄸ</span></div>
+<div class='key' id='KeyR'><span class='eng hidden'>r</span><span class='ecapital hidden'>R</span><span class='kor noncapital'>ㄱ</span><span class='kcapital hidden'>ㄲ</span></div>
+<div class='key' id='KeyT'><span class='eng hidden'>t</span><span class='ecapital hidden'>T</span><span class='kor noncapital'>ㅅ</span><span class='kcapital hidden'>ㅆ</span></div>
+<div class='key' id='KeyY'><span class='eng hidden'>y</span><span class='ecapital hidden'>Y</span><span class='kor'>ㅛ</span></div>
+<div class='key' id='KeyU'><span class='eng hidden'>u</span><span class='ecapital hidden'>U</span><span class='kor'>ㅕ</span></div>
+<div class='key' id='KeyI'><span class='eng hidden'>i</span><span class='ecapital hidden'>I</span><span class='kor'>ㅑ</span></div>
+<div class='key' id='KeyO'><span class='eng hidden'>o</span><span class='ecapital hidden'>O</span><span class='kor noncapital'>ㅐ</span><span class='kcapital hidden'>ㅒ</span></div>
+<div class='key' id='KeyP'><span class='eng hidden'>p</span><span class='ecapital hidden'>P</span><span class='kor noncapital'>ㅔ</span><span class='kcapital hidden'>ㅖ</span></div>
+<div class='key' id='BracketLeft'><span class='norm'>[</span><span class='ncapital hidden'>{</span></div>
+<div class='key' id='BracketRight'><span class='norm'>]</span><span class='ncapital hidden'>}</span></div>
+<div class='key' id='Backslash'><span class='norm'>\</span><span class='ncapital hidden'>|</span></div>
+</div>
+<div id='thirdRow'>
+<div class='key' id='CapsLock'>Caps</div>
+<div class='key' id='KeyA'><span class='eng hidden'>a</span><span class='ecapital hidden'>A</span><span class='kor'>ㅁ</span></div>
+<div class='key' id='KeyS'><span class='eng hidden'>s</span><span class='ecapital hidden'>S</span><span class='kor'>ㄴ</span></div>
+<div class='key' id='KeyD'><span class='eng hidden'>d</span><span class='ecapital hidden'>D</span><span class='kor'>ㅇ</span></div>
+<div class='key' id='KeyF'><span class='eng hidden'>f</span><span class='ecapital hidden'>F</span><span class='kor'>ㄹ</span></div>
+<div class='key' id='KeyG'><span class='eng hidden'>g</span><span class='ecapital hidden'>G</span><span class='kor'>ㅎ</span></div>
+<div class='key' id='KeyH'><span class='eng hidden'>h</span><span class='ecapital hidden'>H</span><span class='kor'>ㅗ</span></div>
+<div class='key' id='KeyJ'><span class='eng hidden'>j</span><span class='ecapital hidden'>J</span><span class='kor'>ㅓ</span></div>
+<div class='key' id='KeyK'><span class='eng hidden'>k</span><span class='ecapital hidden'>K</span><span class='kor'>ㅏ</span></div>
+<div class='key' id='KeyL'><span class='eng hidden'>l</span><span class='ecapital hidden'>L</span><span class='kor'>ㅣ</span></div>
+<div class='key' id='Semicolon'><span class='norm'>;</span><span class='ncapital hidden'>:</span></div>
+<div class='key' id='Quote'><span class='norm'>'</span><span class='ncapital hidden'>"</span></div>
+<div class='key' id='Enter'>Enter</div>
+</div>
+<div id='forthRow'>
+<div class='key' id='ShiftLeft'>Shift</div>
+<div class='key' id='KeyZ'><span class='eng hidden'>z</span><span class='ecapital hidden'>Z</span><span class='kor'>ㅋ</span></div>
+<div class='key' id='KeyX'><span class='eng hidden'>x</span><span class='ecapital hidden'>X</span><span class='kor'>ㅌ</span></div>
+<div class='key' id='KeyC'><span class='eng hidden'>c</span><span class='ecapital hidden'>C</span><span class='kor'>ㅊ</span></div>
+<div class='key' id='KeyV'><span class='eng hidden'>v</span><span class='ecapital hidden'>V</span><span class='kor'>ㅍ</span></div>
+<div class='key' id='KeyB'><span class='eng hidden'>b</span><span class='ecapital hidden'>B</span><span class='kor'>ㅠ</span></div>
+<div class='key' id='KeyN'><span class='eng hidden'>n</span><span class='ecapital hidden'>N</span><span class='kor'>ㅜ</span></div>
+<div class='key' id='KeyM'><span class='eng hidden'>m</span><span class='ecapital hidden'>M</span><span class='kor'>ㅡ</span></div>
+<div class='key' id='Comma'><span class='norm'>,</span><span class='ncapital hidden'><</span></div>
+<div class='key' id='Period'><span class='norm'>.</span><span class='ncapital hidden'>></span></div>
+<div class='key' id='Slash'><span class='norm'>/</span><span class='ncapital hidden'>?</span></div>
+<div class='key' id='ShiftRight'>Shift</div>
+</div>
+<div id='fifthRow'>
+<div class='key' id='Space'>Space</div>
+</div>
+</div>
+
+<div id='langSelect'>
+<div class='language' id='engSelect'>English</div>
+<div class='language active' id='korSelect'>Korean</div>
+<div class='key' id='ArrowLeft'>←</div>
+<div class='key' id='ArrowUp'>↑</div>
+<div class='key' id='ArrowDown'>↓</div>
+<div class='key' id='ArrowRight'>→</div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

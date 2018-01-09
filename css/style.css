@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+font-family: koreanFont;
+src: url(../font/koreanfont.ttf);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: koreanFont;
+  color: #91AA9D;
+  background-color: #193441;
+  overflow-y: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"], textarea {
+  background-color : #D1DBBD;
+  color: #1F4152; 
+}
+
+.hidden {
+  display: none;
+}
+
+.key {
+  display: inline-block;
+}
+
+.language {
+  display: inline-block;
+}
+
+.language:hover {
+  cursor: pointer;
+}
+
+#displayedText, #keyboard, #langSelect {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#keyboard {
+  text-align: center;
+}
+
+.key, .language {
+  text-align: center;
+  background-color: #3E606F;
+  
+}
+
+.active {
+  background-color: #4B7587;
+}
+
+/* desktop styling */
+@media (min-width: 1440px) {
+  body {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  textarea {
+    width: 800px;
+    height: 250px;
+  }
+
+  .key {
+    margin: 5px 3px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .language {
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .active {
+    transform: translateY(3px);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  #displayedText, #keyboard, #langSelect {
+    margin-top: 30px;
+  }
+
+  #displayedText {
+    border-radius: 15px;
+  }
+
+  #keyboard {
+    width: 950px;
+  }
+
+  #langSelect {
+    width: 675px;
+  }
+
+  #Tab, #Backspace { /*total width of one row of keys should be 855px including inner margins*/
+    width: 75px;
+  }
+
+  #Enter {
+    width: 100px;
+  }
+
+  #CapsLock {
+    width: 90px;
+  }
+
+  #ShiftLeft, #ShiftRight {
+    width: 127.5px;
+  }
+
+  #Space {
+    width: 920px;
+  }
+}
+
+/* laptop styling */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  body {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  textarea {
+    width: 800px;
+    height: 150px;
+  }
+
+  .key {
+    margin: 5px 3px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .language {
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .active {
+    transform: translateY(3px);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  #displayedText, #keyboard, #langSelect {
+    margin-top: 20px;
+  }
+
+  #langSelect {
+    margin-top: 10px;
+  }
+
+  #displayedText {
+    border-radius: 15px;
+  }
+
+  #keyboard {
+    width: 950px;
+  }
+
+  #langSelect {
+    width: 675px;
+  }
+
+  #Tab, #Backspace {
+    width: 75px;
+  }
+
+  #Enter {
+    width: 100px;
+  }
+
+  #CapsLock {
+    width: 90px;
+  }
+
+  #ShiftLeft, #ShiftRight {
+    width: 127.5px;
+  }
+
+  #Space {
+    width: 920px;
+  }
+}
+
+/* tablet styling */
+@media (min-width: 550px) and (max-width: 1024px) {
+  body {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  textarea {
+    width: 800px;
+    height: 250px;
+  }
+
+  .key {
+    margin: 5px 3px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .language {
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .active {
+    transform: translateY(3px);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  #displayedText, #keyboard, #langSelect {
+    margin-top: 30px;
+  }
+
+  #displayedText {
+    border-radius: 15px;
+  }
+
+  #keyboard {
+    width: 950px;
+  }
+
+  #langSelect {
+    width: 675px;
+  }
+
+  #Tab, #Backspace {
+    width: 75px;
+  }
+
+  #Enter {
+    width: 100px;
+  }
+
+  #CapsLock {
+    width: 90px;
+  }
+
+  #ShiftLeft, #ShiftRight {
+    width: 127.5px;
+  }
+
+  #Space {
+    width: 920px;
+  }
+}
+
+/* mobile styling */
+@media (max-width: 549px) {
+  body {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    font-size: 3em;
+  }
+
+  .key {
+    margin: 3px 1px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .language {
+    height: 25px;
+    width: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  .active {
+    transform: translateY(3px);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+  }
+
+  #displayedText, #keyboard{
+    margin-top: 15px;
+  }
+
+  #langSelect {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #keyboard {
+    width: 100%;
+  }
+
+  #langSelect {
+    width: 100%;
+  }
+
+  #Space {
+    width: 325px;
+  }
+
+  #Backquote, #Equal, #BracketLeft, #BracketRight, #Semicolon {
+    display: none;
+  }
+}
